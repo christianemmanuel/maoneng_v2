@@ -1,0 +1,15 @@
+<svg id="maoneng-logo-f" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="571" height="379.078" viewBox="0 0 571 379.078">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.385" y1="0.364" x2="1.898" y2="0.874" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f04e36"/>
+      <stop offset="1" stop-color="#060c31"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.219" y1="0.441" x2="1.277" y2="0.723" xlink:href="#linear-gradient"/>
+  </defs>
+  <path id="Path_18" data-name="Path 18" d="M297.387,252.844,107.054,443.381V254.841L297.387,64.3Z" transform="translate(83.28 -64.304)" opacity="0.81" fill="url(#linear-gradient)"/>
+  <path id="Path_19" data-name="Path 19" d="M221.048,252.844,30.714,443.381V254.841L221.048,64.3Z" transform="translate(-30.714 -64.304)" fill="#f04e36" opacity="0.81"/>
+  <path id="Path_20" data-name="Path 20" d="M373.726,252.844,183.393,443.381V254.841L373.726,64.3Z" transform="translate(197.274 -64.304)" opacity="0.5" fill="url(#linear-gradient-2)"/>
+  <g id="Group_14" data-name="Group 14" transform="translate(0.401 0.666)">
+    <path id="Path_21" data-name="Path 21" d="M30.875,64.571v94l92.963-94Z" transform="translate(-30.875 -64.571)" fill="#f04e36"/>
+  </g>
+</svg>

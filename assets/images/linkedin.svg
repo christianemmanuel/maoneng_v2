@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="linkedin" transform="translate(-83 -3047)">
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="12.5" cy="12.5" r="12.5" transform="translate(83 3047)" fill="#f04e36"/>
+    <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M2.91,13H.215V4.321h2.7ZM1.561,3.137A1.568,1.568,0,1,1,3.122,1.562,1.574,1.574,0,0,1,1.561,3.137ZM13,13H10.308V8.775c0-1.007-.02-2.3-1.4-2.3-1.4,0-1.616,1.094-1.616,2.226V13H4.6V4.321H7.183V5.505h.038a2.832,2.832,0,0,1,2.55-1.4C12.5,4.1,13,5.9,13,8.233V13Z" transform="translate(89 3052.999)" fill="#0f145b"/>
+  </g>
+</svg>

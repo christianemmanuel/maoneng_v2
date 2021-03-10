@@ -1,0 +1,111 @@
+
+.header__gradient {
+  z-index: 1;
+  position: relative;
+  color: $white;
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(15,20,91,0.45) 0%, rgba(15,20,91,0.65) 20%, rgba(15,20,91,.8) 86%);
+    z-index: -1;
+  }
+}
+.header {
+  min-height: 100vh;
+  position: relative;
+  background-color: $darkBlue;
+  background-image: url(../images/DJI_0035.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+  .header__details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .container {
+      height: 100%;
+      align-items: center;
+      flex-direction: initial;
+      h1 {
+        color: $white;
+        margin-bottom: 40px;
+        span {
+          max-width: 1000px;
+          display: block;
+          padding: 35px 35px 35px 0;
+          position: relative;
+          z-index: 1;
+          &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            top: 0;
+            z-index: -1;
+            left: -26%;
+            height: 100%;
+            width: 125%;
+            background: transparent linear-gradient(261deg, #0B114378 35%, #EF472D 100%) 0% 0% no-repeat padding-box;
+            opacity: 0.86;
+          }
+          &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            top: 0;
+            z-index: -1;
+            left: -126%;
+            height: 100%;
+            width: 100%;
+            background-color: #EF472D;
+            opacity: 0.86;
+          }
+        }
+      }
+      .btn {
+        min-width: 320px;
+      }
+    }
+  }
+  .header__video {
+    background-color: transparent;
+    background-image: none;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    video {
+      width: auto;
+      height: auto;
+      min-width: 100%;
+      min-height: 100%;
+      left: 50%;
+      margin: auto;
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      visibility: visible;
+      z-index: -1;
+    }
+  }
+}

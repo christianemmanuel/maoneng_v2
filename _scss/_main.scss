@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+
+@import "parts/vars";
+
+@import "parts/mixins";
+
+@import "parts/global";
+@import "parts/forms";
+@import "parts/navigation";
+@import "parts/search";
+@import "parts/categories";
+@import "parts/pagination";
+@import "parts/header";
+@import "parts/newsletter";
+@import "../assets/css/slick";
+@import "../assets/css/slick-theme";
+@import "parts/footer";
+@import "parts/responsive";

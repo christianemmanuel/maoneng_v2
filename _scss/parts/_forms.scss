@@ -1,0 +1,49 @@
+
+.form-group {
+  position: relative;
+}
+.form {
+  font-family: 'Conv_Nunito-Regular', Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #767676;
+  width: 100%;
+  height: 3rem;
+  display: block;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.5;
+  border-radius: 0.1875rem;
+  transition: border-color 180ms ease-in-out, 
+  box-shadow 180ms ease-in-out;
+  &:focus {
+    border-color: #191C1E;
+    outline: 0;
+    box-shadow: 0 0 0 0.04rem;
+  }
+}
+.btn__default {
+  font-family: 'Conv_Nunito-Regular', Helvetica, Arial, sans-serif;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border: none;
+  padding: .375rem .75rem;
+  height: 3rem;
+  line-height: 1.5;
+  border-radius: 0.1875rem;
+  transition: color 180ms ease-in-out,
+  background-color 180ms ease-in-out,
+  border-color 180ms ease-in-out,
+  box-shadow 180ms ease-in-out;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(53, 53, 53, 0.5);
+}

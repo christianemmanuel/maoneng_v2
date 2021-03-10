@@ -1,0 +1,72 @@
+.search {
+  left: 0px;
+  width: 100%;
+  height: 75px;
+  background-color: #191C1E;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  height: 0px;
+  transition: opacity 150ms ease-in-out;
+  overflow: hidden;
+  &.search__open {
+    height: 75px; 
+    opacity: 1;
+  }
+  .container {
+    align-items: center;
+    height: 100%;
+    form {
+      display: flex;
+      width: 100%;
+    }
+    .search__input {
+      font-family: 'Conv_Nunito-Regular';
+      margin-bottom: 0px;
+      outline: 0px;
+      border: 0px;
+      border-radius: 0px;
+      box-shadow: none;
+      width: 100%;
+      appearance: textfield;
+      font-size: 1.2rem;
+      height: 2.5rem;
+      background-color: transparent;
+      color: #ffffff;
+      ::placeholder {
+        color: #ffffff;
+      }
+    }
+    .btn__search {
+      background-image: url(../../assets/images/SEARCH_ICON-white.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1.1555rem;
+      background-color: transparent;
+      overflow: hidden;
+      text-indent: -9999px;
+      padding-left: 20px;
+      padding-right: 20px;
+      left: 10px;
+      position: relative;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    /* Change Autocomplete styles in Chrome*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      -webkit-text-fill-color: #ffffff;
+      -webkit-box-shadow: 0 0 0px 1000px #191C1E inset;
+      box-shadow: 0 0 0px 1000px #191C1E inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.newsletter {
+  width: 100%;
+  border-top: 1px solid #E2E2E2;
+  padding-top: 70px;
+  .newletter__content {
+    max-width: 800px;
+    margin: auto;
+  }
+  .newsletter__title {
+    text-align: center;
+    color: #565656;
+    margin-bottom: 30px;
+  }
+  .form__group {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+  }
+  form {
+    display: flex;
+    .form {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .btn__default {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      width: 69px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-image: url(../../assets/images/ionic-md-send.svg);
+      background-size: 1.261875rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #fff;
+      border: 1px solid #767676;
+      border-left: none;
+    }
+  }
+}
