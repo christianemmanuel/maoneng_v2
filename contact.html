@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>Maoneng</title>
+
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div id="app">
+    <nav class="main_nav">
+      <div class="container">
+        <div class="branding">
+          <a href="index.html">
+            <picture>
+              <source 
+                srcset="./assets/images/icon-inkednotes.png"
+                type="image/png"
+                media="all and (max-width: 480px)"
+              />
+  
+              <img class="branding__logo" src="./assets/images/logo.svg" alt="Logo">
+            </picture>
+          </a>
+        </div>
+    
+        <div class="navigation__container">
+          <nav class="navmenu">
+            <ul class="navmenu__list">
+              <li class="navmenu__item"><a href="index.html">Home</a></li>
+              <li class="navmenu__item"><a href="about-us.html">About us</a></li>
+              <li class="navmenu__item"><a href="epc.html">Epc</a></li>
+              <li class="navmenu__item"><a href="distribution.html">Distribution</a></li>
+              <li class="navmenu__item"><a href="microgrid.html">Microgrid</a></li>
+              <li class="navmenu__item active"><a href="projects.html">Projects</a></li>
+              <li class="navmenu__item"><a href="careers.html">Careers</a></li>
+              <li class="navmenu__item"><a href="news.html">News</a></li>
+              <li class="navmenu__item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <a href="#" class="btn btn--orange">Inquire Now!</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section__blue lg__padding padding_bottom_0 section_contact_us">
+      <div class="container">
+        <div class="contact_us">
+          <div class="contact_us_detail">
+            <h2>Contact Us</h2>
+
+            <div class="country">
+              <h3>Philippines</h3>
+              <p>Unit 1704, 17th Floor Robinsons-Equitable Tower ADB Ave. cor, P.Poveda Rd Ortigas Center, Pasig, 1605 Manila</p>
+            </div>
+
+            <div class="country">
+              <h3>Australia</h3>
+              <p>Lvl 9, Avaya House, 123 Epping Rd Macquarie Park, 2113 NSW</p>
+            </div>
+          </div>
+
+          <div class="contact_form">
+            <div class="contact_form_wrapper">
+              <h4>CONTACT FORM</h4>
+
+              <form action="?">
+                <div class="form_group">
+                  <input type="text" name="full_name" id="full_name" placeholder="Full Name">
+                </div>
+                <div class="form_group">
+                  <input type="text" name="company" id="company" placeholder="Company">
+                </div>
+
+                <div class="grid_wrapper__2">
+                  <div class="form_group">
+                    <input type="text" name="company" id="company" placeholder="Company">
+                  </div>
+
+                  <div class="form_group">
+                    <input type="text" name="company" id="company" placeholder="Company">
+                  </div>
+                </div>
+
+                <div class="inquiry_type_container">
+                  <h5>ENQUIRY TYPE</h5>
+                  <div class="inquiry_type">
+                    <div class="form_group">
+                      <input type="radio" name="inquire" id="commercial">
+                      <label for="commercial">Commercial</label>
+                    </div>
+  
+                    <div class="form_group">
+                      <input type="radio" name="inquire" id="career">
+                      <label for="career">Career</label>
+                    </div>
+  
+                    <div class="form_group">
+                      <input type="radio" name="inquire" id="press">
+                      <label for="press">Press</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form_group">
+                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn--orange btn--arrow" href="#">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer__details">
+          <div class="footer__logo">
+            <img class="branding__logo" src="./assets/images/maoneng-icon.svg" alt="Logo">
+          </div>
+
+          <div class="footer__copyright">
+            <script type="text/javascript">document.write(new Date().getFullYear());</script> Maoneng Philippines <br> All rights reserved.
+          </div>
+        </div>
+
+        <div class="footer__menu">
+          <p>Navigation</p>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">products</a></li>
+            <li><a href="#">news</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <p>Social</p>
+          <div class="footer__social--item">
+            <a href="#" class="icon__social social__icon--fb"></a>
+            <a href="#" class="icon__social social__icon--twitter"></a>
+            <a href="#" class="icon__social social__icon--linkedin"></a>
+            <a href="#" class="icon__social social__icon--instagram"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+  
+  <script src="./assets/js/jquery-3.4.1.min.js"></script>
+  <script src="./assets/js/smoothScroll.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
