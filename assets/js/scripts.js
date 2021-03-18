@@ -5,6 +5,8 @@ var __id = function (selector) {
   return document.getElementById(selector);
 };
 
+var err = baguetteBox.run('.project_img_lists');
+
 /*****************************
   Homepage banner
 ******************************/ 
@@ -29,7 +31,12 @@ function autoHeight() {
 autoHeight();
 
 // Window Resize
-window.onresize = autoHeight;
+$( window ).resize(function() {
+  autoHeight;
+  location.reload();
+  console.log("asdsad")
+});
+
 
 
 // Jquery Staff
@@ -39,27 +46,7 @@ $('.testimonial__list').slick({
   dots: true,
   autoplay: true,
   autoplaySpeed: 7000,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+ });
 
 $('.single-item').slick({
   dots: true,
@@ -79,7 +66,21 @@ $('.video').parent().click(function() {
   }
 });
 
+/***********************************************
+  Mobile Toggle
+************************************************/
+$(document).ready(function() {
+  $('.menu__toggle').click(e => {
+    $('body').toggleClass('active_menu')
 
+    $('.navigation__container').slideToggle('fast')
+    e.preventDefault()
+  })
+});
+window.onresize = function() {
+  $('.navigation__container').removeAttr('style')
+  $('body').removeClass('active_menu')
+}
 
 /***********************************************
   Scroll Horizontal in Project detail page
@@ -158,7 +159,7 @@ if(slider) {
   });
 }
 
-var err = baguetteBox.run('.project_img_lists');
+
 
 
 var App = (function () {

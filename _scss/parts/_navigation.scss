@@ -70,6 +70,40 @@
             }
           }
         }
+        &:hover {
+          ul {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+          }
+        }
+        ul {
+          position: absolute;
+          left: 0;
+          min-width: 275px;
+          flex-direction: column;
+          padding-top: 18px;
+          transform: translateY(20px);
+          opacity: 0;
+          visibility: hidden;
+          @include transition(all ease-in-out 180ms);
+          li {
+            margin: 0;
+            a {
+              text-transform: none;
+              padding: 1.1rem 1rem;
+              background-image: url(../../assets/images/icon_arrow_right_white.svg);
+              background-size: 0.8125rem;
+              background-repeat: no-repeat;
+              background-position: 250px center;
+              background-color: $darkBlue;
+              &:hover {background-color: $blue;}
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
       }
       
     }
@@ -81,3 +115,112 @@
   }
 }
 
+.menu__toggle {
+  display: none;
+  margin-left: auto;
+  .line {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 7px 0;
+    @include transition(all ease-in-out 180ms);
+  }
+}
+
+body.active_menu {
+  .menu__toggle {
+    .line:nth-child(1) {
+      transform: rotate(-45deg);
+      top: 9px;
+    }
+    .line:nth-child(2) {
+      opacity: 0;
+    }
+    .line:nth-child(3) {
+      transform: rotate(45deg);
+      top: -9px;
+    }
+  }
+}
+
+
+@media (max-width: 1199.98px) {
+  .menu__toggle {
+    display: block;
+  }
+  
+  .main_nav {
+    .branding {
+      .branding__logo {
+        min-width: auto;
+        max-width: 210px;
+      }
+    }
+
+    .navigation__container {
+      display: none;
+    }
+  }
+
+  .main_nav {
+    .navigation__container {
+      top: 80px;
+      left: 0px;
+      width: 100%;
+      background-color: rgba(15,20,91,0.9);
+      position: absolute;
+      padding: 15px 30px;
+
+      ul.navmenu__list {
+        display: flex;
+        flex-direction: column;
+        li.navmenu__item {
+          margin: 0;
+          &.active {
+            a {
+              color: $orange;
+            }
+          }
+          a {
+            padding: 1rem 0;
+            &::after {
+              height: 0px;
+            }
+          }
+          ul {
+            display: block;
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            margin: 0;
+            transform: none;
+            padding: 0;
+            li {
+              a {
+                background-position: right center;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .btn {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+ }
+
+ @media (max-width: 576px) {  
+  .main_nav .branding .branding__logo {
+    max-width: 55px;
+  }
+ }
+ 

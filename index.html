@@ -11,7 +11,8 @@
   <title>Maoneng</title>
 
   <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/main.css?v=1.1">
+  <link rel="stylesheet" href="./assets/css/baguetteBox.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,15 +27,21 @@
           <a href="index.html">
             <picture>
               <source 
-                srcset="./assets/images/icon-inkednotes.png"
+                srcset="./assets/images/mini-maoneng-logo.svg"
                 type="image/png"
-                media="all and (max-width: 480px)"
+                media="all and (max-width: 576px)"
               />
   
               <img class="branding__logo" src="./assets/images/logo.svg" alt="Logo">
             </picture>
           </a>
         </div>
+
+        <div class="menu__toggle">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
     
         <div class="navigation__container">
           <nav class="navmenu">
@@ -42,7 +49,11 @@
               <li class="navmenu__item active"><a href="index.html">Home</a></li>
               <li class="navmenu__item"><a href="about-us.html">About us</a></li>
               <li class="navmenu__item"><a href="epc.html">Epc</a></li>
-              <li class="navmenu__item"><a href="distribution.html">Distribution</a></li>
+              <li class="navmenu__item" class="dropdown"><a href="#">Distribution</a>
+                <ul>
+                  <li><a href="our-products.html">Products</a></li>
+                </ul>
+              </li>
               <li class="navmenu__item"><a href="microgrid.html">Microgrid</a></li>
               <li class="navmenu__item"><a href="projects.html">Projects</a></li>
               <li class="navmenu__item"><a href="careers.html">Careers</a></li>
@@ -85,10 +96,16 @@
 
     <section>
       <div class="three_images">
-        <div class="grid_wrapper__3">
-          <img src="./assets/images/0.jpg" alt="Image">
-          <img src="./assets/images/4U9A8136.jpg" alt="Image">
-          <img src="./assets/images/4U9A7864-.jpg" alt="Image">
+        <div class="grid_wrapper__3 project_img_lists">
+          <a href="./assets/images/0-lg.jpeg">
+            <img src="./assets/images/0.jpg" alt="Image">
+          </a>
+          <a href="./assets/images/4U9A81362.jpg">
+            <img src="./assets/images/4U9A8136.jpg" alt="Image">
+          </a>
+          <a href="./assets/images/4U9A7864-lg.jpg">
+            <img src="./assets/images/4U9A7864-.jpg" alt="Image">
+          </a>
         </div>
       </div>
     </section>
@@ -496,6 +513,8 @@
   <script src="./assets/js/jquery-3.4.1.min.js"></script>
   <script src="./assets/js/smoothScroll.js"></script>
   <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/baguetteBox.min.js"></script>
+  <script src='./assets/js/jquery.zoom.js'></script>
   <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
