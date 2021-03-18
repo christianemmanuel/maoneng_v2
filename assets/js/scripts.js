@@ -33,8 +33,6 @@ autoHeight();
 // Window Resize
 $( window ).resize(function() {
   autoHeight;
-  location.reload();
-  console.log("asdsad")
 });
 
 
